@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/linearFragment">
+
+    <fragment
+        android:id="@+id/linearFragment"
+        android:name="com.lleans.androidmateri1recap.LinearFragment"
+        android:label="fragment_linear"
+        tools:layout="@layout/fragment_linear" >
+        <action
+            android:id="@+id/action_linearFragment_to_relativerFragment"
+            app:destination="@id/relativerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/relativerFragment"
+        android:name="com.lleans.androidmateri1recap.RelativerFragment"
+        android:label="fragment_relative"
+        tools:layout="@layout/fragment_relative" >
+        <action
+            android:id="@+id/action_relativerFragment_to_intentFrgament"
+            app:destination="@id/intentFrgament" />
+    </fragment>
+    <fragment
+        android:id="@+id/intentFrgament"
+        android:name="com.lleans.androidmateri1recap.IntentFrgament"
+        android:label="fragment_intent_frgament"
+        tools:layout="@layout/fragment_intent_frgament" />
+</navigation>
