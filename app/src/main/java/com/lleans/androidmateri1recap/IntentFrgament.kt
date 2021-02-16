@@ -13,8 +13,8 @@ import androidx.navigation.NavController
 import androidx.navigation.Navigation
 
 class IntentFrgament : Fragment(), View.OnClickListener {
-    lateinit var navController: NavController
 
+    lateinit var navController: NavController
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -28,16 +28,24 @@ class IntentFrgament : Fragment(), View.OnClickListener {
         super.onViewCreated(view, savedInstanceState)
         navController = Navigation.findNavController(view)
         view.findViewById<Button>(R.id.simpan).setOnClickListener(this)
+        view.findViewById<Button>(R.id.next3).setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
         when(v!!.id){
-            R.id.simpan -> {
-                val MoveData = Intent(activity, TargetActivity::class.java)
-                val editText = view?.findViewById(R.id.edtNama) as EditText
-                MoveData.putExtra(TargetActivity.EXTRA_DATA, editText.text.toString())
-                startActivity(MoveData)
-            }
+            R.id.simpan -> simpan()
+            R.id.next3 -> pindahfrgament()
         }
+    }
+
+    private fun pindahfrgament() {
+        navController!!.navigate(R.id.action_intentFrgament_to_intentResultsFragment)
+    }
+
+    fun simpan(){
+        val MoveData = Intent(activity, TargetActivity::class.java)
+        val editText = view?.findViewById(R.id.edtNama) as EditText
+        MoveData.putExtra(TargetActivity.EXTRA_DATA, editText.text.toString())
+        startActivity(MoveData)
     }
 }

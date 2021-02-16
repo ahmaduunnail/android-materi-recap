@@ -27,5 +27,14 @@
         android:id="@+id/intentFrgament"
         android:name="com.lleans.androidmateri1recap.IntentFrgament"
         android:label="fragment_intent_frgament"
-        tools:layout="@layout/fragment_intent_frgament" />
+        tools:layout="@layout/fragment_intent_frgament" >
+        <action
+            android:id="@+id/action_intentFrgament_to_intentResultsFragment"
+            app:destination="@id/intentResultsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/intentResultsFragment"
+        android:name="com.lleans.androidmateri1recap.IntentResultsFragment"
+        android:label="fragment_intent_results"
+        tools:layout="@layout/fragment_intent_results" />
 </navigation>
