@@ -1,5 +1,7 @@
 # android-materi-recap
 
+![Aplikasi Bisa dicoba disini](https://github.com/ahmaduunnail/android-materi-recap/raw/master/app/release/app-release.apk)
+
 ## Linear Layout
 adalah salah satu jenis layout pada Android xml yang mana layout tersebut memberikan susunan urutan komponen secra lurus bisa vertical maupun Horizontal
 ![Linear Layout](https://github.com/ahmaduunnail/android-materi-recap/blob/master/.github/(2).png)
