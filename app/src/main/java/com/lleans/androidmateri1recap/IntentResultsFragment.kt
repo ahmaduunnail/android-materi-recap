@@ -9,12 +9,15 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
+import androidx.navigation.NavController
+import androidx.navigation.Navigation
 import butterknife.BindView
 import butterknife.ButterKnife
 import butterknife.OnClick
 
 class IntentResultsFragment : Fragment() {
 
+    lateinit var navController: NavController
     val RC_EDIT_NAME: Int = 112
 
     @BindView(R.id.text_view_result)
@@ -33,6 +36,7 @@ class IntentResultsFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        navController = Navigation.findNavController(view)
         ButterKnife.bind(this, view)
     }
 
@@ -40,6 +44,11 @@ class IntentResultsFragment : Fragment() {
     fun OnClick() {
         val intent = Intent(activity, EditNameActivity::class.java)
         startActivityForResult(intent, RC_EDIT_NAME)
+    }
+
+    @OnClick(R.id.next4)
+    fun ChangeFragment() {
+        navController!!.navigate(R.id.action_intentResultsFragment_to_latihanFragment)
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {

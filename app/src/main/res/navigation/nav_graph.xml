@@ -36,5 +36,14 @@
         android:id="@+id/intentResultsFragment"
         android:name="com.lleans.androidmateri1recap.IntentResultsFragment"
         android:label="fragment_intent_results"
-        tools:layout="@layout/fragment_intent_results" />
+        tools:layout="@layout/fragment_intent_results" >
+        <action
+            android:id="@+id/action_intentResultsFragment_to_latihanFragment"
+            app:destination="@id/latihanFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/latihanFragment"
+        android:name="com.lleans.androidmateri1recap.LatihanFragment"
+        android:label="fragment_latihan"
+        tools:layout="@layout/fragment_latihan" />
 </navigation>
