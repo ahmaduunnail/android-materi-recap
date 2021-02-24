@@ -25,7 +25,7 @@ adalah methood yang dimana kita panggil saat tidak ada data yang harus disimpan 
 <code><img height=500 src="https://github.com/ahmaduunnail/android-materi-recap/blob/master/.github/(6).png" alt="Intent-Results-2"></code>
 <code><img height=500 src="https://github.com/ahmaduunnail/android-materi-recap/blob/master/.github/(7).png" alt="Intent-Results-3"></code>
 #
-## Latihan Fragments
+## Fragments
 Fragments adalah komponen yang menampilkan antarmuka ke pengguna dengan layoutnya sendiri, Berbeda dengan activity biasa, fragments lebih mudah dan fleksibel, lifecycle fragment juga sedikit yaitu onCreate, OnCreateView, OnPause, OnDestroyView dengan lifecycle tersebut fragment lebih ringan ketimbang dari activity biasa
 #
 <code><img height=500 src="https://github.com/ahmaduunnail/android-materi-recap/blob/master/.github/(8).png" alt="Latihan-Fragment-1"></code>
