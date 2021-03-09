@@ -39,7 +39,7 @@ class IntentFrgament : Fragment(), View.OnClickListener {
     }
 
     private fun pindahfrgament() {
-        navController!!.navigate(R.id.action_intentFrgament_to_intentResultsFragment)
+        navController.navigate(R.id.action_intentFrgament_to_intentResultsFragment)
     }
 
     fun simpan(){

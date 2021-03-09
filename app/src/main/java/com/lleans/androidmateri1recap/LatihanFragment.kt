@@ -13,7 +13,9 @@ import butterknife.BindView
 import butterknife.ButterKnife
 import butterknife.OnClick
 
-class LatihanFragment : Fragment() {
+class LatihanFragment : Fragment(), View.OnClickListener {
+
+    lateinit var navController: NavController
 
     @BindView(R.id.frame_container)
     lateinit var frameContainer: FrameLayout
@@ -26,6 +28,8 @@ class LatihanFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        navController = Navigation.findNavController(view)
+        view.findViewById<Button>(R.id.btnPager).setOnClickListener(this)
         ButterKnife.bind(this, view)
 
         val transaction = activity?.supportFragmentManager?.beginTransaction()
@@ -41,6 +45,12 @@ class LatihanFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_latihan, container, false)
+    }
+
+    override fun onClick(v: View?) {
+        when(v!!.id){
+            R.id.btnPager -> navController.navigate(R.id.action_latihanFragment_to_viewPager)
+        }
     }
 
     @OnClick(R.id.btn_fragment1)

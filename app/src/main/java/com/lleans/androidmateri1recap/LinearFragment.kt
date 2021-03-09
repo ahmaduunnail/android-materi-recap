@@ -29,7 +29,7 @@ class LinearFragment : Fragment(), View.OnClickListener {
 
     override fun onClick(v: View?) {
         when(v!!.id){
-            R.id.next1 -> navController!!.navigate(R.id.action_linearFragment_to_relativerFragment)
+            R.id.next1 -> navController.navigate(R.id.action_linearFragment_to_relativerFragment)
         }
     }
 }

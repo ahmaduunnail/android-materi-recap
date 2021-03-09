@@ -45,5 +45,14 @@
         android:id="@+id/latihanFragment"
         android:name="com.lleans.androidmateri1recap.LatihanFragment"
         android:label="fragment_latihan"
-        tools:layout="@layout/fragment_latihan" />
+        tools:layout="@layout/fragment_latihan" >
+        <action
+            android:id="@+id/action_latihanFragment_to_viewPager"
+            app:destination="@id/viewPager" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewPager"
+        android:name="com.lleans.androidmateri1recap.ViewPager"
+        android:label="fragment_view_pager"
+        tools:layout="@layout/fragment_view_pager" />
 </navigation>

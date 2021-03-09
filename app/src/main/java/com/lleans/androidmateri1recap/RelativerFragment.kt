@@ -29,7 +29,7 @@ class RelativerFragment: Fragment(), View.OnClickListener {
 
     override fun onClick(v: View?) {
         when(v!!.id){
-            R.id.next2 -> navController!!.navigate(R.id.action_relativerFragment_to_intentFrgament)
+            R.id.next2 -> navController.navigate(R.id.action_relativerFragment_to_intentFrgament)
         }
     }
 }

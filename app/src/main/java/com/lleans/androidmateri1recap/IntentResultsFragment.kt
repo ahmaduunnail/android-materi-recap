@@ -48,7 +48,7 @@ class IntentResultsFragment : Fragment() {
 
     @OnClick(R.id.next4)
     fun ChangeFragment() {
-        navController!!.navigate(R.id.action_intentResultsFragment_to_latihanFragment)
+        navController.navigate(R.id.action_intentResultsFragment_to_latihanFragment)
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {

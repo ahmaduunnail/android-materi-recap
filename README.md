@@ -30,3 +30,7 @@ Fragments adalah komponen yang menampilkan antarmuka ke pengguna dengan layoutny
 #
 <code><img height=500 src="https://github.com/ahmaduunnail/android-materi-recap/blob/master/.github/(8).png" alt="Latihan-Fragment-1"></code>
 <code><img height=500 src="https://github.com/ahmaduunnail/android-materi-recap/blob/master/.github/(9).png" alt="Latihan-Fragment-2"></code>
+#
+## View Pager
+<code><img height=500 src="https://github.com/ahmaduunnail/android-materi-recap/blob/master/.github/(10).png" alt="View-Pager-1"></code>
+<code><img height=500 src="https://github.com/ahmaduunnail/android-materi-recap/blob/master/.github/(11).png" alt="View-Pager-2"></code>
