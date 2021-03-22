@@ -25,7 +25,7 @@
     </fragment>
     <fragment
         android:id="@+id/intentFrgament"
-        android:name="com.lleans.androidmateri1recap.IntentFrgament"
+        android:name="com.lleans.androidmateri1recap.Intent.IntentFrgament"
         android:label="fragment_intent_frgament"
         tools:layout="@layout/fragment_intent_frgament" >
         <action
@@ -34,7 +34,7 @@
     </fragment>
     <fragment
         android:id="@+id/intentResultsFragment"
-        android:name="com.lleans.androidmateri1recap.IntentResultsFragment"
+        android:name="com.lleans.androidmateri1recap.IntentResults.IntentResultsFragment"
         android:label="fragment_intent_results"
         tools:layout="@layout/fragment_intent_results" >
         <action
@@ -43,7 +43,7 @@
     </fragment>
     <fragment
         android:id="@+id/latihanFragment"
-        android:name="com.lleans.androidmateri1recap.LatihanFragment"
+        android:name="com.lleans.androidmateri1recap.LatihanFragment.LatihanFragment"
         android:label="fragment_latihan"
         tools:layout="@layout/fragment_latihan" >
         <action
@@ -52,7 +52,16 @@
     </fragment>
     <fragment
         android:id="@+id/viewPager"
-        android:name="com.lleans.androidmateri1recap.ViewPager"
+        android:name="com.lleans.androidmateri1recap.ViewPager.ViewPager"
         android:label="fragment_view_pager"
-        tools:layout="@layout/fragment_view_pager" />
+        tools:layout="@layout/fragment_view_pager" >
+        <action
+            android:id="@+id/action_viewPager_to_retrofitFragment"
+            app:destination="@id/retrofitFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/retrofitFragment"
+        android:name="com.lleans.androidmateri1recap.RestAPI.RetrofitFragment"
+        android:label="fragment_retrofit"
+        tools:layout="@layout/fragment_retrofit" />
 </navigation>

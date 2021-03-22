@@ -40,3 +40,8 @@ Komponen android yang sering digunakan di aplikasi saat ini, lebih tepatnya saat
 #
 <code><img height=500 src="https://github.com/ahmaduunnail/android-materi-recap/blob/master/.github/(10).png" alt="View-Pager-1"></code>
 <code><img height=500 src="https://github.com/ahmaduunnail/android-materi-recap/blob/master/.github/(11).png" alt="View-Pager-2"></code>
+#
+## Working With REST API
+Praktik dengan API yaitu menggunakan library Retrofit dan Okhttp untuk mendapatkan data dari server dalam bentuk Json
+#
+<code><img height=500 src="https://github.com/ahmaduunnail/android-materi-recap/blob/master/.github/(12).png" alt="API-1"></code>
