@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background"
     android:orientation="vertical"
     tools:context=".ViewPager.ViewPager">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
         android:orientation="vertical">
 
         <androidx.viewpager.widget.ViewPager
@@ -22,24 +25,25 @@
             android:id="@+id/Tab"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/white"
+            android:background="@drawable/ic_rectangle_2"
             app:tabMode="fixed"
-            app:tabTextColor="@color/grey"
+            app:tabTextColor="@color/white"
             app:tabSelectedTextColor="@color/accent"/>
-
-        <Button
-            android:id="@+id/btnAPI"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:padding="20dp"
-            android:background="@color/accent"
-            android:text="Working with API"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textSize="20dp"
-            android:textStyle="normal"/>
 
     </LinearLayout>
 
-</FrameLayout>
+    <Button
+        android:id="@+id/btnAPI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/custom_button"
+        android:paddingHorizontal="60dp"
+        android:paddingVertical="15dp"
+        android:text="Working with API"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+</LinearLayout>

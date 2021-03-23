@@ -4,10 +4,10 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import android.widget.TextView
 import butterknife.BindView
 import butterknife.ButterKnife
 import butterknife.OnClick
+import com.google.android.material.textfield.TextInputEditText
 import com.lleans.androidmateri1recap.R
 
 class EditNameActivity : AppCompatActivity() {
@@ -15,7 +15,7 @@ class EditNameActivity : AppCompatActivity() {
     val EXTRA_NAME: String = "EXTRA_NAME"
 
     @BindView(R.id.editText2)
-    lateinit var editTextView: TextView
+    lateinit var editTextView: TextInputEditText
     @BindView(R.id.btn_save)
     lateinit var button: Button
 

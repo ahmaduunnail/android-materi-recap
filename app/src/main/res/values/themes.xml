@@ -2,6 +2,17 @@
     <!-- Base application theme. -->
         <!-- Primary brand color. -->
         <!-- Status bar color. -->
-        <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar"/>
+        <style name="Theme.AndroidMateri1Recap" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+            <item name="colorPrimary">@color/accent</item>
+            <item name="colorPrimaryVariant">@color/primary</item>
+            <item name="colorOnPrimary">@color/white</item>
+            <!-- Secondary brand color. -->
+            <item name="colorSecondary">@color/grey</item>
+            <item name="colorSecondaryVariant">@color/grey</item>
+            <item name="colorOnSecondary">@color/primary</item>
+            <!-- Status bar color. -->
+            <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+            <!-- Customize your theme here. -->
         <!-- Customize your theme here. -->
+        </style>
 </resources>

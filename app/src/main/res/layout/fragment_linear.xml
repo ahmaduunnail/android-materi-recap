@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background"
+    android:orientation="vertical"
     tools:context=".LinearFragment">
 
     <LinearLayout
         android:id="@+id/ln1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,12 +25,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_margin="30dp"
-            android:background="@color/accent"
             android:text="Button1"
             android:textAllCaps="false"
+            android:layout_marginBottom="10dp"
             android:textColor="@color/white"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:textStyle="normal" />
 
         <LinearLayout
@@ -42,12 +46,11 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_margin="10dp"
-                android:background="@color/accent"
                 android:padding="15dp"
                 android:text="Button 2"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
-                android:textSize="12dp"
+                android:textSize="12sp"
                 android:textStyle="normal" />
 
             <Button
@@ -55,12 +58,11 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_margin="10dp"
-                android:background="@color/accent"
                 android:padding="15dp"
                 android:text="Button 3"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
-                android:textSize="12dp"
+                android:textSize="12sp"
                 android:textStyle="normal" />
 
 
@@ -79,12 +81,11 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:layout_weight="1"
-                android:background="@color/accent"
                 android:padding="15dp"
                 android:text="Button 4"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
-                android:textSize="12dp"
+                android:textSize="12sp"
                 android:textStyle="normal" />
 
             <Button
@@ -92,12 +93,11 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:layout_weight="1"
-                android:background="@color/accent"
                 android:padding="15dp"
                 android:text="Button 5"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
-                android:textSize="12dp"
+                android:textSize="12sp"
                 android:textStyle="normal" />
 
         </LinearLayout>
@@ -113,24 +113,22 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:background="@color/accent"
                 android:padding="15dp"
                 android:text="Button 6"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
-                android:textSize="12dp"
+                android:textSize="12sp"
                 android:textStyle="normal" />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:background="@color/accent"
                 android:padding="15dp"
                 android:text="Button 7"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
-                android:textSize="12dp"
+                android:textSize="12sp"
                 android:textStyle="normal" />
 
         </LinearLayout>
@@ -141,9 +139,9 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@mipmap/ic_launcher" />
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@mipmap/ic_launcher_round" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -165,19 +163,20 @@
 
         </LinearLayout>
 
-        <Button
-            android:id="@+id/next1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp"
-            android:layout_marginTop="60dp"
-            android:background="@color/accent"
-            android:text="Relative Layout"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textSize="20dp"
-            android:textStyle="normal" />
+
     </LinearLayout>
-</FrameLayout>
+
+    <Button
+        android:id="@+id/next1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/custom_button"
+        android:paddingHorizontal="60dp"
+        android:paddingVertical="15dp"
+        android:text="Relative Layout"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+</LinearLayout>
